@@ -24,7 +24,7 @@ function reset() {
 </script>
 
 <template>
-  <h1 style="height: 110vh">Счётчик</h1>
+  <h1 class="Counter">Счётчик</h1>
   <p>Текущее значение: {{ count }}</p>
   <button @click="increment">+1</button>
   <button @click="decrement">-1</button>
@@ -42,5 +42,9 @@ button {
 }
 .reset {
   margin-top: 20px;
+}
+.Counter {
+  height: 110vh;
+  margin-top: 50px;
 }
 </style>
