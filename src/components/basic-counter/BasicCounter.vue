@@ -44,7 +44,6 @@ button {
   margin-top: 20px;
 }
 .Counter {
-  height: 110vh;
   margin-top: 50px;
 }
 </style>

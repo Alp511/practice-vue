@@ -9,7 +9,7 @@
 </template>
 <style scoped>
 .fixed {
-  color: white;
+  background: white;
   position: fixed;
   width: 100%;
   top: 0;
