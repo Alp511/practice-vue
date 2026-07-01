@@ -2,7 +2,7 @@
   <header class="fixed">
     <div>
       <nav>
-        <a href="">Главная</a>
+        <router-link to="/">Главная</router-link>
       </nav>
     </div>
   </header>

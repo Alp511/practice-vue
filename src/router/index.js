@@ -1,23 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import home from '@/components/basic-home/home.vue'
-import BasicCounter from '@/components/basic-counter/BasicCounter.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: home,
+    component: () => import('../components/basic-home/home.vue'),
   },
   {
-    path: '/BasicCounter',
+    path: '/basic-counter',
     name: 'BasicCounter',
-    component: BasicCounter,
+    component: () => import('../components/basic-counter/BasicCounter.vue'),
   },
 ]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [],
+  routes: routes,
 })
 
 export default router
